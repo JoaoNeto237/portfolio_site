@@ -1,0 +1,168 @@
+/* Servicos.module.css */
+.containerServicos {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 200px;
+}
+
+.headerServicos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.h2Servicos {
+    color: white;
+    font-size: 4em;
+    font-family: serif;
+    margin: 0;
+    padding-right: 20px;
+}
+
+.servicosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+.servicos h3 {
+    text-transform: capitalize;
+    font-size: 1.2em;
+    margin: 15px 0 10px;
+    color: white;
+}
+
+.servicos p {
+    font-size: 0.9em;
+    text-align: justify;
+    color: white;
+    padding: 10px;
+}
+
+.servicos i, .iconeNav {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.servicos i:hover, .iconeNav:hover {
+    transform: scale(1.1);
+    color: #00bfff;
+}
+
+@media (max-width: 1024px) {
+    .containerServicos {
+        max-width: 900px;
+        padding: 15px;
+    }
+
+    .h2Servicos {
+        font-size: 3.5em;
+    }
+
+    .servicos {
+        max-width: 250px;
+        padding: 15px;
+    }
+
+    .servicos h3 {
+        font-size: 1.1em;
+    }
+
+    .servicos p {
+        font-size: 0.85em;
+    }
+
+    .servicos i {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerServicos {
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .h2Servicos {
+        font-size: 3em;
+        text-align: center;
+        margin: auto;
+    }
+
+    .servicosContainer {
+        gap: 20px;
+    }
+
+    .servicos {
+        max-width: 220px;
+        padding: 15px;
+    }
+
+    .servicos h3 {
+        font-size: 1em;
+    }
+
+    .servicos p {
+        font-size: 0.8em;
+    }
+
+    .servicos i {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .containerServicos {
+        padding: 10px;
+        margin-bottom: 100px;
+    }
+
+    .h2Servicos {
+        font-size: 2.5em;
+        text-align: center;
+        margin-bottom: 10px;
+        margin: auto;
+    }
+
+    .servicosContainer {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .servicos {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .servicos h3 {
+        font-size: 0.9em;
+    }
+
+    .servicos p {
+        font-size: 0.75em;
+    }
+
+    .servicos i {
+        font-size: 35px;
+    }
+}

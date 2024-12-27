@@ -1,0 +1,150 @@
+.header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: sticky; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000;
+}
+
+.headerNav {
+    background-color: #fff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    justify-content: space-between; 
+}
+
+.headerUl {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.headerLi {
+    font-size: 1.2em;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+    padding: 10px 15px;
+}
+
+.headerLi:hover {
+    color: #615b5b;
+}
+
+.hamburguer {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: transparent; 
+    z-index: 1001; 
+}
+
+.hamburguer div {
+    width: 30px;
+    height: 4px;
+    background-color: #000;
+    transition: 0.3s;
+}
+
+.menuFundo {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 998; 
+}
+
+.menuFundo.open {
+    display: block;
+}
+
+.menuLateral {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #fff; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding-top: 50px;
+    z-index: 999; 
+}
+
+.menuLateral.open {
+    display: block;
+}
+
+.menuLateral ul {
+    list-style-type: none;
+    background-color: #333;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.menuLateral li {
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menuLateral li:hover {
+    background-color: #615b5b;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .headerUl {
+        display: none; 
+    }
+
+    .hamburguer {
+        display: flex; 
+    }
+
+    .menuFundo {
+        display: none;
+    }
+
+    .menuLateral {
+        display: none; 
+    }
+}
+
+@media (min-width: 769px) {
+    .headerUl {
+        display: flex;
+    }
+
+    .hamburguer {
+        display: none; 
+    }
+
+    .menuFundo {
+        display: none; 
+    }
+
+    .menuLateral {
+        display: none; 
+    }
+}

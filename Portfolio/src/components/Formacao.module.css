@@ -1,0 +1,173 @@
+.divGeralFormacao {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    margin-bottom: 200px;
+}
+
+.containerFormacao {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    gap: 20px; 
+    align-items: flex-start;
+}
+
+.h2Formacao {
+    color: white;
+    font-size: 4em;
+    font-family: serif;
+    margin: 20px;
+}
+
+.h3Formacao {
+    color: white;
+    font-size: 2.1em;
+    margin-top: 0;
+}
+
+.imgFormacao {
+    flex-shrink: 0;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20%;
+}
+
+.textContainer {
+    margin-left: 300px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.ulFormacao {
+    color: white;
+    list-style-type: disc;
+    margin-left: 20px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.liFormacao {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.buttonFormacao {
+    background-color: #fff;
+    width: 300px;
+    color: #000;
+    font-size: 1.1em;
+    padding: 12px 30px; 
+    border: none; 
+    border-radius: 50px; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    font-weight: bold; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+@media (max-width: 1024px) {
+    .divGeralFormacao {
+        max-width: 900px;
+    }
+
+    .containerFormacao {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .h2Formacao {
+        font-size: 3.5em;
+    }
+
+    .imgFormacao {
+        width: 300px;
+        height: 250px;
+    }
+
+    .textContainer {
+        margin-left: 200px;
+    }
+
+    .buttonFormacao {
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .divGeralFormacao {
+        padding: 50px;
+    }
+
+    .containerFormacao {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .h2Formacao {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .imgFormacao {
+        width: 80%;
+        height: auto;
+    }
+
+    .textContainer {
+        margin-left: 0;
+        padding: 25px;
+        text-align: center;
+    }
+
+    .h3Formacao {
+        font-size: 1.6em;
+    }
+
+    .buttonFormacao {
+        width: 200px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .divGeralFormacao {
+        padding: 10px;
+        margin-bottom: 100px;
+    }
+
+    .containerFormacao {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .h2Formacao {
+        font-size: 2.5em;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .h3Formacao {
+        font-size: 1.5em;
+    }
+
+    .imgFormacao {
+        width: 100%;
+        height: auto;
+        border-radius: 10%;
+    }
+
+    .ulFormacao {
+        font-size: 0.9em;
+    }
+
+    .buttonFormacao {
+        width: 180px;
+        font-size: 1em;
+        padding: 10px 20px;
+        
+    }
+}
