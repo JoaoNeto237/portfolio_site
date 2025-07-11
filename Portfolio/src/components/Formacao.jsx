@@ -7,8 +7,8 @@ function Formacao() {
 
   const baixarCv = () =>{
     const link = document.createElement('a');
-    link.href = 'curriculoFullStack.pdf';
-    link.download = 'curriculoFullStack.pdf';
+    link.href = 'Curriculo_Full-Stack.pdf';
+    link.download = 'Curriculo_Full-Stack.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
