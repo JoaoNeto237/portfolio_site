@@ -73,8 +73,8 @@ function Projetos() {
                         src={landingPage}
                         alt="Sistema Inteligente de Classificação de Emails"
                     />
-                    <h3 className={styles.projetoTitulo}>Sistema Inteligente de Classificação de Emails</h3>
-                    <p className={styles.projetoDescricao}>Gerenciador de e-mails para o setor financeiro, criado com o objetivo de otimizar a comunicação e agilizar processos internos. O sistema classifica automaticamente as mensagens recebidas em categorias como “produtivas” e “improdutivas”, facilitando a organização e priorização das demandas. Além disso, conta com a funcionalidade de gerar respostas automáticas personalizadas com base no conteúdo do e-mail, oferecendo praticidade e eficiência no dia a dia.</p>
+                    <h3 className={styles.projetoTitulo}>Classificador de Emails</h3>
+                    <p className={styles.projetoDescricao}>Gerenciador de e-mails para o setor financeiro, focado em otimizar a comunicação interna e agilizar processos. O sistema organiza automaticamente as mensagens em categorias como “produtivas” e “improdutivas” e oferece respostas automáticas personalizadas, garantindo maior eficiência e praticidade no dia a dia da equipe.</p>
                     <button 
                         onClick={()=> acessarProjeto('https://gerenciador-de-emails.onrender.com/')} 
                         className={styles.buttonProjeto}>
@@ -89,7 +89,7 @@ function Projetos() {
                         alt="Agente de Atendimento"
                     />
                     <h3 className={styles.projetoTitulo}>Agente de Atendimento</h3>
-                    <p className={styles.projetoDescricao}>Agente de Atendimento com IA, desenvolvido para simular um atendente virtual em uma pizzaria. O sistema interage com o cliente por meio de um chat, seguindo regras definidas para registrar pedidos, garantir fidelidade ao cardápio e orientar a escolha de produtos. O objetivo é oferecer uma experiência de atendimento automatizada, eficiente e próxima da interação humana.</p>
+                    <p className={styles.projetoDescricao}>Agente de Atendimento com IA para pizzarias, criado para automatizar o atendimento ao cliente via chat. O sistema registra pedidos, segue o cardápio e orienta escolhas de produtos, proporcionando uma experiência eficiente, prática e próxima da interação humana, melhorando a agilidade do serviço e a satisfação do cliente.</p>
                     <button 
                         onClick={()=> acessarProjeto('https://pizza-bot-frontend.vercel.app/')} 
                         className={styles.buttonProjeto}>
