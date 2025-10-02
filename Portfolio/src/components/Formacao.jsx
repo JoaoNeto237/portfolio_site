@@ -55,7 +55,7 @@ function Formacao() {
                 Colégio Estadual José Pereira Faustino, Ensino Médio, 2022
               </li>
               <li className={styles.liFormacao}>
-                Análise e desenvolvimento de sistemas, Estácio de Sá, 2023 -
+                Análise e desenvolvimento de sistemas, Estácio de Sá, 2023 - 2025
               </li>
             </ul>
           </div>

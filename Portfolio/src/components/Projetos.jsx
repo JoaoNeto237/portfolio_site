@@ -70,30 +70,30 @@ function Projetos() {
                 <div className={`${styles.projetos} reveal`}>
                     <img
                         className={styles.imgProjetos}
-                        src={landingPage}
-                        alt="Landing Page"
+                        src={Portfolio/imagens/imgBotPizza.jpg}
+                        alt="Sistema Inteligente de Classificação de Emails"
                     />
-                    <h3 className={styles.projetoTitulo}>Landing Page</h3>
-                    <p className={styles.projetoDescricao}>Projeto de landing page para loja de tecnologia, focado em destacar produtos inovadores e suas funcionalidades. Com design moderno e responsivo, a página oferece uma navegação rápida e eficiente, atraindo novos clientes e reforçando a imagem da marca.</p>
+                    <h3 className={styles.projetoTitulo}>Sistema Inteligente de Classificação de Emails</h3>
+                    <p className={styles.projetoDescricao}>Gerenciador de e-mails para o setor financeiro, criado com o objetivo de otimizar a comunicação e agilizar processos internos. O sistema classifica automaticamente as mensagens recebidas em categorias como “produtivas” e “improdutivas”, facilitando a organização e priorização das demandas. Além disso, conta com a funcionalidade de gerar respostas automáticas personalizadas com base no conteúdo do e-mail, oferecendo praticidade e eficiência no dia a dia.</p>
                     <button 
-                        onClick={()=> acessarProjeto('https://github.com/JoaoNeto237/landing-pagee')} 
+                        onClick={()=> acessarProjeto('https://gerenciador-de-emails.onrender.com/')} 
                         className={styles.buttonProjeto}>
-                        Acessar no GitHub
+                        Acessar no navegador
                     </button>
                 </div>
 
                 <div className={`${styles.projetos} reveal`}>
                     <img
                         className={styles.imgProjetos}
-                        src={sanduicheria}
-                        alt="site de vendas"
+                        src={Portfolio/imagens/imgBotPizza.jpg}
+                        alt="Agente de Atendimento"
                     />
-                    <h3 className={styles.projetoTitulo}>Site de vendas</h3>
-                    <p className={styles.projetoDescricao}>Site de vendas para uma sanduicheria, com o objetivo de divulgar o cardápio e promover ofertas especiais. A página destaca os diferentes tipos de sanduíches, ingredientes frescos e combinações exclusivas, oferecendo uma experiência visual apetitosa e de fácil navegação para facilitar o pedido online.</p>
+                    <h3 className={styles.projetoTitulo}>Agente de Atendimento</h3>
+                    <p className={styles.projetoDescricao}>Agente de Atendimento com IA, desenvolvido para simular um atendente virtual em uma pizzaria. O sistema interage com o cliente por meio de um chat, seguindo regras definidas para registrar pedidos, garantir fidelidade ao cardápio e orientar a escolha de produtos. O objetivo é oferecer uma experiência de atendimento automatizada, eficiente e próxima da interação humana.</p>
                     <button 
-                        onClick={()=> acessarProjeto('https://github.com/JoaoNeto237/projeto_hamburgueria')} 
+                        onClick={()=> acessarProjeto('https://pizza-bot-frontend.vercel.app/')} 
                         className={styles.buttonProjeto}>
-                        Acessar no GitHub
+                        Acessar no navegador
                     </button>
                 </div>
 
