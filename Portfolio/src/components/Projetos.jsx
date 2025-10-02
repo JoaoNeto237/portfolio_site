@@ -6,6 +6,8 @@ import landingPage from '../../imagens/landingPage.png';
 import premiumChoices from '../../imagens/premiumChoices.jpg';
 import sistema from '../../imagens/sistema.jpeg';
 import sanduicheria from '../../imagens/sanduicheria.jpg';
+import imgBotPizza from '../../imagens/imgBotPizza.png';
+import imgGerenciadorEmails from '../../imagens/imgGerenciadorEmails.png';
 
 import ScrollReveal from 'scrollreveal';
 
@@ -70,7 +72,7 @@ function Projetos() {
                 <div className={`${styles.projetos} reveal`}>
                     <img
                         className={styles.imgProjetos}
-                        src={landingPage}
+                        src={imgGerenciadorEmails}
                         alt="Sistema Inteligente de Classificação de Emails"
                     />
                     <h3 className={styles.projetoTitulo}>Classificador de Emails</h3>
@@ -85,7 +87,7 @@ function Projetos() {
                 <div className={`${styles.projetos} reveal`}>
                     <img
                         className={styles.imgProjetos}
-                        src={sanduicheria}
+                        src={imgBotPizza}
                         alt="Agente de Atendimento"
                     />
                     <h3 className={styles.projetoTitulo}>Agente de Atendimento</h3>
