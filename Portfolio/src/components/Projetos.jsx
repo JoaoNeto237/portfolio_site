@@ -6,8 +6,8 @@ import landingPage from '../../imagens/landingPage.png';
 import premiumChoices from '../../imagens/premiumChoices.jpg';
 import sistema from '../../imagens/sistema.jpeg';
 import sanduicheria from '../../imagens/sanduicheria.jpg';
-import imgBotPizza from '../../imagens/imgBotPizza.png';
-import imgGerenciadorEmails from '../../imagens/imgGerenciadorEmails.png';
+import imgBotPizza from '../../imagens/imgBotPizza.jpg';
+import imgGerenciadorEmails from '../../imagens/imgGerenciadorEmails.jpg';
 
 import ScrollReveal from 'scrollreveal';
 
