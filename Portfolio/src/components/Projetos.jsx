@@ -70,7 +70,7 @@ function Projetos() {
                 <div className={`${styles.projetos} reveal`}>
                     <img
                         className={styles.imgProjetos}
-                        src={Portfolio/imagens/imgBotPizza.jpg}
+                        src={imgBotPizza}
                         alt="Sistema Inteligente de Classificação de Emails"
                     />
                     <h3 className={styles.projetoTitulo}>Sistema Inteligente de Classificação de Emails</h3>
@@ -85,7 +85,7 @@ function Projetos() {
                 <div className={`${styles.projetos} reveal`}>
                     <img
                         className={styles.imgProjetos}
-                        src={Portfolio/imagens/imgBotPizza.jpg}
+                        src={imgBotPizza}
                         alt="Agente de Atendimento"
                     />
                     <h3 className={styles.projetoTitulo}>Agente de Atendimento</h3>
