@@ -74,7 +74,7 @@ function Projetos() {
                         alt="Sistema Inteligente de Classificação de Emails"
                     />
                     <h3 className={styles.projetoTitulo}>Classificador de Emails</h3>
-                    <p className={styles.projetoDescricao}>Gerenciador de e-mails para o setor financeiro, focado em otimizar a comunicação interna e agilizar processos. O sistema organiza automaticamente as mensagens em categorias como “produtivas” e “improdutivas” e oferece respostas automáticas personalizadas, garantindo maior eficiência e praticidade no dia a dia da equipe.</p>
+                    <p className={styles.projetoDescricao}>Gerenciador de e-mails para o setor financeiro, focado em otimizar a comunicação interna e agilizar processos. O sistema organiza automaticamente mensagens em categorias como “produtivas” e “improdutivas” e oferece respostas automáticas personalizadas, garantindo maior eficiência e praticidade no dia a dia da equipe.</p>
                     <button 
                         onClick={()=> acessarProjeto('https://gerenciador-de-emails.onrender.com/')} 
                         className={styles.buttonProjeto}>
@@ -89,7 +89,7 @@ function Projetos() {
                         alt="Agente de Atendimento"
                     />
                     <h3 className={styles.projetoTitulo}>Agente de Atendimento</h3>
-                    <p className={styles.projetoDescricao}>Agente de Atendimento com IA para pizzarias, criado para automatizar o atendimento ao cliente via chat. O sistema registra pedidos, segue o cardápio e orienta escolhas de produtos, proporcionando uma experiência eficiente, prática e próxima da interação humana, melhorando a agilidade do serviço e a satisfação do cliente.</p>
+                    <p className={styles.projetoDescricao}>Agente de atendimento desenvolvido para pizzaria, capaz de interagir com clientes via chat de forma intuitiva. O sistema registra pedidos seguindo o cardápio, oferece orientações sobre produtos e sugere combinações, garantindo uma experiência prática e ágil. Além disso, o atendimento automatizado mantém a comunicação clara, aumentando a satisfação e fidelidade dos clientes.</p>
                     <button 
                         onClick={()=> acessarProjeto('https://pizza-bot-frontend.vercel.app/')} 
                         className={styles.buttonProjeto}>
