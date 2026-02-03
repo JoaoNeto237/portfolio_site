@@ -5,15 +5,15 @@ import ScrollReveal from 'scrollreveal';
 
 function Formacao() {
 
-  const baixarCv = () =>{
+const baixarCv = () => {
     const link = document.createElement('a');
-    link.href = '../../public/Curriculo_Full_Stack_atualizado_.pdf';
-    link.download = '../../public/Curriculo_Full_Stack_atualizado_.pdf';
+    // Aponte para a raiz do domínio, onde o arquivo da pasta public estará disponível
+    link.href = '/curriculo-joao-cunha.pdf'; 
+    link.download = 'Curriculo_Joao_Cunha.pdf'; // Nome que o usuário verá ao baixar
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-
-  }
+  };
 
   useEffect(() => {
     const sr = ScrollReveal({
