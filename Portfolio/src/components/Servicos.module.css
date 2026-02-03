@@ -2,11 +2,12 @@
 .containerServicos {
     margin: 0 auto;
     max-width: 1200px;
-    padding: 20px;
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin-bottom: 200px;
+    gap: 40px;
+    /* Reduzi de 200px para 100px para evitar vácuo no final da seção */
+    margin-bottom: 100px;
 }
 
 .headerServicos {
@@ -27,7 +28,7 @@
 .servicosContainer {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 25px; /* Gap levemente menor para aproximar os cards */
     justify-content: center;
 }
 
@@ -37,34 +38,42 @@
     align-items: center;
     background-color: #333;
     border-radius: 20px;
-    padding: 20px;
-    max-width: 300px;
-    width: 100%;
+    padding: 30px 20px; /* Aumentei o padding vertical para equilibrar o preenchimento */
+    /* Aumentei de 300px para 350px para o texto não ficar tão "estrito" e verticalizado */
+    max-width: 350px; 
+    flex: 1 1 300px; /* Permite que o card cresça e ocupe melhor o espaço disponível */
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.servicos:hover {
+    transform: translateY(-5px); /* Efeito suave ao passar o mouse */
 }
 
 .servicos h3 {
     text-transform: capitalize;
-    font-size: 1.2em;
+    font-size: 1.4em; /* Aumentei levemente para destaque */
     margin: 15px 0 10px;
     color: white;
 }
 
 .servicos p {
-    font-size: 0.9em;
-    text-align: justify;
-    color: white;
-    padding: 10px;
+    font-size: 1em; /* Tamanho de leitura padrão mais confortável */
+    text-align: center; /* Centralizado preenche melhor visualmente em cards */
+    color: #ccc; /* Tom levemente mais suave para o texto longo */
+    line-height: 1.5; /* Espaçamento entre linhas melhora o preenchimento visual */
+    padding: 0 10px;
 }
 
-.servicos i, .iconeNav {
-    font-size: 50px;
+/* Ajuste para ícones do FontAwesome em React */
+.servicos svg {
+    font-size: 45px;
     color: white;
     margin-bottom: 10px;
     transition: transform 0.2s ease-in-out;
 }
 
-.servicos i:hover, .iconeNav:hover {
+.servicos:hover svg {
     transform: scale(1.1);
     color: #00bfff;
 }
@@ -80,33 +89,21 @@
     }
 
     .servicos {
-        max-width: 250px;
-        padding: 15px;
-    }
-
-    .servicos h3 {
-        font-size: 1.1em;
-    }
-
-    .servicos p {
-        font-size: 0.85em;
-    }
-
-    .servicos i {
-        font-size: 45px;
+        max-width: 300px;
     }
 }
 
 @media (max-width: 768px) {
     .containerServicos {
-        padding: 10px;
-        gap: 15px;
+        padding: 20px;
+        gap: 30px;
+        margin-bottom: 60px;
     }
 
     .h2Servicos {
         font-size: 3em;
         text-align: center;
-        margin: auto;
+        margin: 0 auto;
     }
 
     .servicosContainer {
@@ -114,55 +111,21 @@
     }
 
     .servicos {
-        max-width: 220px;
-        padding: 15px;
-    }
-
-    .servicos h3 {
-        font-size: 1em;
-    }
-
-    .servicos p {
-        font-size: 0.8em;
-    }
-
-    .servicos i {
-        font-size: 40px;
+        max-width: 100%; /* Ocupa a largura disponível no tablet/mobile */
+        flex: 1 1 100%;
     }
 }
 
 @media (max-width: 480px) {
-    .containerServicos {
-        padding: 10px;
-        margin-bottom: 100px;
-    }
-
     .h2Servicos {
         font-size: 2.5em;
-        text-align: center;
-        margin-bottom: 10px;
-        margin: auto;
-    }
-
-    .servicosContainer {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .servicos {
-        max-width: 100%;
-        padding: 10px;
     }
 
     .servicos h3 {
-        font-size: 0.9em;
+        font-size: 1.2em;
     }
 
     .servicos p {
-        font-size: 0.75em;
-    }
-
-    .servicos i {
-        font-size: 35px;
+        font-size: 0.9em;
     }
 }

@@ -1,72 +1,84 @@
+/* Habilidades.module.css */
 .containerHabilidades {
     margin: 0 auto;
     max-width: 1200px;
-    padding: 20px;
-    margin-bottom: 200px;
+    padding: 40px 20px;
+    /* Reduzido para manter a unidade visual com a seção de serviços */
+    margin-bottom: 100px;
 }
 
 .h2Habilidades {
     color: white;
     font-size: 4em;
     font-family: serif;
-    margin: 20px;
+    margin-bottom: 40px;
     text-align: left;
 }
 
 .divImgHabilidades {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
+    /* auto-fit preenche o espaço disponível automaticamente */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
     justify-items: center;
     align-items: center;
 }
 
-.imgHabilidades {
-    width: 150px;
-    height: auto;
-    object-fit: contain;
-}
-
+/* Container individual de cada ícone */
 .divImgHabilidades div {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.03); /* Leve fundo para dar profundidade */
+    border-radius: 15px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.divImgHabilidades div:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.imgHabilidades {
+    width: 80px; /* Tamanho mais elegante para ícones em grid */
+    height: 80px;
+    object-fit: contain;
+    filter: grayscale(20%); /* Efeito visual moderno */
+    transition: filter 0.3s ease;
+}
+
+.divImgHabilidades div:hover .imgHabilidades {
+    filter: grayscale(0%);
 }
 
 .nomeHabilidade {
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 1rem;
     color: white;
     font-family: Arial, sans-serif;
+    font-weight: 500;
 }
 
-@media (max-width: 1024px) {
-    .containerHabilidades {
-        max-width: 900px;
-    }
+/* Responsividade */
 
+@media (max-width: 1024px) {
     .h2Habilidades {
         font-size: 3.5em;
         text-align: center;
     }
 
     .divImgHabilidades {
-        grid-template-columns: repeat(3, 1fr); 
-    }
-
-    .imgHabilidades {
-        width: 120px; 
-    }
-
-    .nomeHabilidade {
-        font-size: 0.9rem;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     }
 }
 
 @media (max-width: 768px) {
     .containerHabilidades {
-        padding: 15px;
+        padding: 20px;
+        margin-bottom: 60px;
     }
 
     .h2Habilidades {
@@ -75,41 +87,28 @@
     }
 
     .divImgHabilidades {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 12px;
+        gap: 20px;
     }
 
     .imgHabilidades {
-        width: 100px;
-    }
-
-    .nomeHabilidade {
-        font-size: 0.85rem;
+        width: 60px;
+        height: 60px;
     }
 }
 
 @media (max-width: 480px) {
-    .containerHabilidades {
-        padding: 10px;
-        margin-bottom: 100px;
-    }
-
     .h2Habilidades {
         font-size: 2.5em;
-        margin: 10px;
-        text-align: center;
     }
 
     .divImgHabilidades {
+        /* Garante pelo menos 2 colunas em celulares pequenos */
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        gap: 15px;
     }
 
     .imgHabilidades {
-        width: 80px; 
-    }
-
-    .nomeHabilidade {
-        font-size: 0.8rem;
+        width: 50px;
+        height: 50px;
     }
 }

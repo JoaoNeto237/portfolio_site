@@ -7,8 +7,8 @@ function Formacao() {
 
   const baixarCv = () =>{
     const link = document.createElement('a');
-    link.href = 'Curriculo_Full-Stack.pdf';
-    link.download = 'Curriculo_Full-Stack.pdf';
+    link.href = '../../public/Curriculo_Full_Stack_atualizado_.pdf';
+    link.download = '../../public/Curriculo_Full_Stack_atualizado_.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -64,10 +64,10 @@ function Formacao() {
             <h3 className={styles.h3Formacao}>Experiência Profissional</h3>
             <ul className={styles.ulFormacao}>
               <li className={styles.liFormacao}>
-                Desenvolvedor web freelancer, 2023 - atual
+                Trainee em Inteligência Artificial, Outubro/2025 - atual
               </li>
               <li className={styles.liFormacao}>
-                Professor de inglês, 2023 - atual
+                Desenvolvedor Full-Stack, Janeiro/2024 - atual
               </li>
             </ul>
           </div>
